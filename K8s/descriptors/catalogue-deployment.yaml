@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: app/v1
 kind: Deployment
 metadata:
   annotations:
@@ -11,7 +11,7 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchLabel:
+    matchLabels:
       io.kompose.service: catalogue
   strategy: {}
   template:

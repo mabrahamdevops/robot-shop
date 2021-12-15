@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
@@ -11,7 +11,7 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchLabel:
+    matchLabels:
       io.kompose.service: cart
   strategy: {}
   template:
